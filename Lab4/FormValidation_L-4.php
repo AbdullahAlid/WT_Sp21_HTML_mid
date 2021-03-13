@@ -103,7 +103,7 @@
 				
 					
 			
-				else if(is_numeric($_POST["code"],"@")=="1")
+				else if(is_numeric($_POST["code"])=="true")
 				{
 					$err_code="*invalid code format";
 					$has_error=true;
@@ -119,7 +119,7 @@
 				
 					
 			
-				else if(is_numeric($_POST["number"],"@")=="")
+				else if(is_numeric($_POST["number"])=="")
 				{
 					$err_number="*invalid number format";
 					$has_error=true;
